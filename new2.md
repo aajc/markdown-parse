@@ -1,0 +1,1 @@
+[dell](https://dell.com)
