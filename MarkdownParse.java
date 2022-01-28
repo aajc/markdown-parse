@@ -21,6 +21,8 @@ public class MarkdownParse {
                 return toReturn;
             }
 
+            toReturn.add(markdown.substring(openParen + 1, closeParen));
+
             currentIndex = closeParen + 1;
 
 
