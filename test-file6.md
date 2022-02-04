@@ -1,3 +1,3 @@
 # title 
 
-![link](page.com)
+![link](new.com)
