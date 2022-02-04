@@ -19,6 +19,10 @@ public class MarkdownParse {
             int openParen = markdown.indexOf("(", nextCloseBracket);
             int closeParen = markdown.indexOf(")", openParen);
 
+            if (nextOpenBracket != 0 && nextOpenBracket == imageExclam + 1) {
+                return toReturn;
+            }
+
             if (openParen == -1) {
                 return toReturn;
             }
