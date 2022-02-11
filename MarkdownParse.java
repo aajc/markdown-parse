@@ -22,7 +22,7 @@ public class MarkdownParse {
             if (nextOpenBracket != 0 && nextOpenBracket == imageExclam + 1) {
                 return toReturn;
             }
-
+   //
             if (openParen == -1) {
                 return toReturn;
             }
