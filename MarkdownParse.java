@@ -66,10 +66,12 @@ public class MarkdownParse {
             int closeParen = markdown.indexOf(")", openParen);
             if(nextOpenBracket == -1 || nextCloseBracket == -1
                   || closeParen == -1 || openParen == -1) {
+                System.out.println("Last index" + currentIndex);
                 return toReturn;
             }
             String potentialLink = markdown.substring(openParen + 1, closeParen);
             if(potentialLink.indexOf(" ") == -1 && potentialLink.indexOf("\n") == -1) {
+                System.out.println("first index" + currentIndex);
                 toReturn.add(potentialLink);
                 currentIndex = closeParen + 1;
             }
